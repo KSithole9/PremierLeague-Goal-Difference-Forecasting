@@ -18,6 +18,7 @@ Data Preprocessing: The first step in data preprocessing is to load and filter d
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/24d52881-4979-46b3-825f-a7126771c613)
 
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/48e46956-458a-483a-9827-58c9392d267e)
+
 Feature Engineering: Each team is assigned a unique ID to create a standardized representation for teams throughout both seasons. These are listed in each row as HomeID and AwayID to represent which teams are playing each other. A column for GoalDif is added as our predictor which represents the goal difference between the home and away teams. Goal differential is a reliable indicator of team performance and is computed as (HomeGoals - AwayGoals). By choosing to use goal difference over ratios, data analysis problems caused by infinite, or zero ratios are reduced.
 
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/95a50fe3-653b-4612-b91b-862ce754240e)
@@ -33,9 +34,11 @@ Model Selection: Several regression models were taken into consideration, such a
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/9cf993e3-ab1a-4a99-ad7d-72542a348b4f)
 
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/695d8f18-b810-4880-9e2e-c3f5f9669ebe)
+
 Results: Applying the linear regression model on the 2021–2022 season shows encouraging accuracy, with a mean squared error of 3.79. SVR (3.84), Random Forest Regressor (4.54), and Decision Tree Regressor (6.42) are examples of comparative models that are not as accurate. The results of the predicted values are interesting. While they are still far from the actual values, they provide predictions that can be used to calculate the likelihood of the home team winning or losing. If the predicted value is positive, it is likely the home team will win. If the predicted value is negative, it is likely the away team will win. This model provides a great foundation for predicting the next season's match outcome.
 
 ![image](https://github.com/KSithole9/PremierLeague-Goal-Difference-Forecasting/assets/152675019/a215666c-69df-4b59-95c3-9c508c1df85d)
+
 Conclusion: In conclusion, this study demonstrates that it is possible to predict English Premier League results with a machine learning model that has been trained on the home team, away team, and goal difference information from the previous season. The application of linear regression has proven to be effective. Even without player-specific data, the model provides insightful information about how matches will turn out. This project establishes the foundation for future investigation and improvement, with the possibility of adding more features to improve prediction performance.
 
 
